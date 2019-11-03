@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+  <head>
+      <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+      <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+    <title>FlashBox</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <body>
+
+      <div class="topnav">
+          <a href="#cat" class="flashbox">FlashBox</a>
+          <a href="#cat">Category</a>
+          <a href="#Popular">Popular</a>
+          <a href="#Featured">Featured</a>
+          <a href="#blog">Blog</a>
+          <a href="#blog" id="abcd2"></a>
+          <a href="#blog">Sign Up</a>
+          <a href="#blog">Sign In</a>
+           <ul class="middle"></ul>
+          
+      </div>
+  
+      <div class="second">
+      <ul>
+        <div class="second-stuff">
+            <li id="small_popular">THE MOST POPULAR QUIZ</li>
+            <img src="jks-ui/assets/images/shapes-small.png" class="shapes-small">
+        </div>
+      </ul>
+      <div class="owl-carousel owl-theme" id="move-able">
+          <div class="item">
+          <div class="card">
+            <div class="container">
+                <img src="background.jpg" alt="Avatar">
+              <h4><b>quiz 1</b></h4> 
+              <p>Desciption</p> 
+            </div>
+          </div>
+          </div>
+          <div class="item"><h4> <div class="item">
+          <div class="card">
+            <div class="container">
+                <img src="background.jpg" alt="background">
+              <h4><b>Name_of_quiz</b></h4> 
+              <p>Desciption</p> 
+            </div>
+          </div>
+          </div></h4></div>
+          <div class="item"><h4> <div class="item">
+          <div class="card">
+            <div class="container">
+                <img src="background.jpg" alt="Avatar">
+              <h4><b>Name_of_quiz</b></h4> 
+              <p>Desciption</p> 
+            </div>
+          </div>
+          </div></h4></div>
+       </div>
+  </div>
+  <div class="last">
+    <div class="last2">
+      <p></p>
+      <br>
+      <br>
+    <br>
+      <p>Made by Rishav katoch and Shivam kulshreshtha</p>
+      <p>Batch- B10</p>
+    </span>
+
+  </div>
+
+
+
+
+
+
+
+  
+ <script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+<script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script>
+$('.owl-carousel').owlCarousel({
+  stagePadding: 50,
+  loop:true,
+  margin:10,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:2
+      },
+      1000:{
+          items:5
+      }
+  }
+})
+</script>
+</body>
+</html>
