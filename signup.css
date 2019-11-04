@@ -4,7 +4,7 @@ html, body {
     font-family: sans-serif;
     font-weight: bold;
     background-color: #ebebeb;
-    height: 100%; 
+    height: 100%;
   }
   .topnav {
     display: flex;
@@ -13,7 +13,7 @@ html, body {
     flex-direction: row;
     justify-content: baseline;
     flex-grow: 1;
-  
+
   }
   .flashbox{
     background: #991a4d;
@@ -21,9 +21,9 @@ html, body {
     font-weight: bolder;
   }
   .middle{
-   flex: 1;      
+   flex: 1;
   }
-  
+
   .topnav a {
     float: left;
     color: black;
@@ -37,7 +37,7 @@ html, body {
     background-color:coral;
     color:white;
   }
-  
+
   #abcd2{
     width: 100%;
     flex-grow: 1;
@@ -47,8 +47,8 @@ html, body {
   #abcd2 a:hover{
     background-color:#ebebeb;
   }
-  
-  
+
+
   .topnav a.active {
     background-color: black;
     color: white;
@@ -61,100 +61,100 @@ html, body {
     font: inherit;
     vertical-align: baseline;
   }
-  
+
   article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
   }
-  
+
   ol, ul {
     list-style: none;
     margin: 0px;
     padding: 0px;
   }
-  
+
   blockquote, q {
     quotes: none;
   }
-  
+
   blockquote:before, blockquote:after, q:before, q:after {
     content: '';
     content: none;
   }
-  
+
   table {
     border-collapse: collapse;
     border-spacing: 0;
   }
-  
+
   /*-- start editing from here --*/
   a {
     text-decoration: none;
   }
-  
+
   .txt-rt {
     text-align: right;
   }
-  
+
   /* text align right */
   .txt-lt {
     text-align: left;
   }
-  
+
   /* text align left */
   .txt-center {
     text-align: center;
   }
-  
+
   /* text align center */
   .float-rt {
     float: right;
   }
-  
+
   /* float right */
   .float-lt {
     float: left;
   }
-  
+
   /* float left */
   .clear {
     clear: both;
   }
-  
+
   /* clear float */
   .pos-relative {
     position: relative;
   }
-  
+
   /* Position Relative */
   .pos-absolute {
     position: absolute;
   }
-  
+
   /* Position Absolute */
   .vertical-base {
     vertical-align: baseline;
   }
-  
+
   /* vertical align baseline */
   .vertical-top {
     vertical-align: top;
   }
-  
+
   /* vertical align top */
   nav.vertical ul li {
     display: block;
   }
-  
+
   /* vertical menu */
   nav.horizontal ul li {
     display: inline-block;
   }
-  
+
   /* horizontal menu */
   img {
     max-width: 100%;
   }
-  
+
   /*-- end reset --*/
   body {
     background: #76b852;
@@ -173,23 +173,23 @@ html, body {
     letter-spacing: 4px;
     font-family: 'Roboto', sans-serif;
   }
-  
+
   /*-- main --*/
   .main-w3layouts {
     padding: 3em 0 1em;
   }
-  
+
   .main-agileinfo {
     width: 35%;
     margin: 3em auto;
     background: rgba(0, 0, 0, 0.18);
     background-size: cover;
   }
-  
+
   .agileits-top {
     padding: 3em;
   }
-  
+
   input[type="text"], input[type="email"], input[type="password"] {
     font-size: 0.9em;
     color: #fff;
@@ -209,17 +209,17 @@ html, body {
     color: #fff;
     font-family: 'Roboto', sans-serif;
   }
-  
+
   input.email, input.text.w3lpass {
     margin: 2em 0;
   }
-  
+
   .text:focus, .text:valid {
     box-shadow: none;
     outline: none;
     background-position: 0 0;
   }
-  
+
   .text:focus::-webkit-input-placeholder, .text:valid::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.7);
     font-size: .9em;
@@ -230,26 +230,26 @@ html, body {
     transform: translateY(-30px);
     visibility: visible !important;
   }
-  
+
   ::-webkit-input-placeholder {
     color: #fff;
     font-weight: 100;
   }
-  
+
   :-moz-placeholder {
     /* Firefox 18- */
     color: #fff;
   }
-  
+
   ::-moz-placeholder {
     /* Firefox 19+ */
     color: #fff;
   }
-  
+
   :-ms-input-placeholder {
     color: #fff;
   }
-  
+
   input[type="submit"] {
     font-size: .9em;
     color: #fff;
@@ -263,7 +263,7 @@ html, body {
     margin: 2em 0;
     letter-spacing: 4px;
   }
-  
+
   input[type="submit"]:hover {
     -webkit-transition: .5s all;
     -moz-transition: .5s all;
@@ -272,7 +272,7 @@ html, body {
     transition: .5s all;
     background: #8DC26F;
   }
-  
+
   .agileits-top p {
     font-size: 1em;
     color: #fff;
@@ -280,7 +280,7 @@ html, body {
     letter-spacing: 1px;
     font-weight: 300;
   }
-  
+
   .agileits-top p a {
     color: #fff;
     -webkit-transition: .5s all;
@@ -288,11 +288,11 @@ html, body {
     transition: .5s all;
     font-weight: 400;
   }
-  
+
   .agileits-top p a:hover {
     color: #76b852;
   }
-  
+
   /*-- //main --*/
   /*-- checkbox --*/
   .wthree-text label {
@@ -302,25 +302,25 @@ html, body {
     cursor: pointer;
     position: relative;
   }
-  
+
   input.checkbox {
-    background: #8DC26F;
+
     cursor: pointer;
     width: 1.2em;
     height: 1.2em;
   }
-  
+
   input.checkbox:before {
-    content: "";
+
     position: absolute;
     width: 1.2em;
     height: 1.2em;
-    background: inherit;
+
     cursor: pointer;
   }
-  
+
   input.checkbox:after {
-    content: "";
+  
     position: absolute;
     top: 0px;
     left: 0;
@@ -333,5 +333,3 @@ html, body {
     -o-transition: .4s ease-in-out;
     transition: .4s ease-in-out;
 }
-  
-  
