@@ -50,14 +50,7 @@ html, body {
     background-color: black;
     color: white;
   }
-  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-  }
+
 
   article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
@@ -88,65 +81,9 @@ html, body {
     text-decoration: none;
   }
 
-  .txt-rt {
-    text-align: right;
-  }
 
 
-  .txt-lt {
-    text-align: left;
-  }
-
-
-  .txt-center {
-    text-align: center;
-  }
-
-
-  .float-rt {
-    float: right;
-  }
-
-
-  .float-lt {
-    float: left;
-  }
-
-
-  .clear {
-    clear: both;
-  }
-
-
-  .pos-relative {
-    position: relative;
-  }
-
-
-  .pos-absolute {
-    position: absolute;
-  }
-
-
-  .vertical-base {
-    vertical-align: baseline;
-  }
-
-
-  .vertical-top {
-    vertical-align: top;
-  }
-
-
-  nav.vertical ul li {
-    display: block;
-  }
-
-
-  nav.horizontal ul li {
-    display: inline-block;
-  }
-
+  
 
   img {
     max-width: 100%;
@@ -171,23 +108,39 @@ html, body {
     font-family: 'Roboto', sans-serif;
   }
 
-  /*-- main --*/
   .main-w3layouts {
     padding: 3em 0 1em;
   }
 
   .main-agileinfo {
-    width: 35%;
+    width: 55%;
     margin: 3em auto;
     background: rgba(0, 0, 0, 0.18);
     background-size: cover;
   }
 
   .agileits-top {
-    padding: 3em;
+    padding: 1em;
+    font-size: 0.9em;
+    color: #fff;
+    font-weight: 100;
+    width: 99.5px;
+    display: block;
+    border: none;
+    padding: 0.8em;
+    border: solid 1px rgba(255, 255, 255, 0.37);
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #fff 4%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #fff 4%);
+    background-position: -800px 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
   }
 
-  input[type="text"], input[type="email"], input[type="password"] {
+  input[type="text"], input[type="Answer"], input[type="password"] {
     font-size: 0.9em;
     color: #fff;
     font-weight: 100;
@@ -316,4 +269,9 @@ html, body {
     -webkit-transition: .4s ease-in-out;
     -o-transition: .4s ease-in-out;
     transition: .4s ease-in-out;
+}
+.mnm{
+  color: black;
+  font: bolder;
+  font-size: 3px;
 }

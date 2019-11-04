@@ -38,17 +38,6 @@ html, body {
   color:white;
 }
 
-#abcd2{
-  width: 100%;
-  flex-grow: 1;
-  background-color:#ebebeb;
-  color:white;
-}
-#abcd2 a:hover{
-  background-color:#ebebeb;
-}
-
-
 .topnav a.active {
   background-color: black;
   color: white;
@@ -77,13 +66,7 @@ html, body {
  height: 30vh;
   width: 40vh;
 }
-#big_popular{
-  position: fixed;
-  list-style-type: none;
-  list-style: none; 
-  left: 20%;
-  top: 20vh;
-}
+
 #small_popular::before{
   
   top:4vh;
@@ -106,9 +89,7 @@ html, body {
     padding: 1px;
     align-content: space-between;
 }
-img{
-  ma
-}
+
 .card{
  
   width: auto;
