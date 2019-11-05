@@ -42,7 +42,15 @@ html, body {
   background-color: black;
   color: white;
 }
-
+#abcd2{
+  width: 100%;
+  flex-grow: 1;
+  background-color:#ebebeb;
+  color:white;
+}
+#abcd2 a:hover{
+  background-color:#ebebeb;
+}
 
 .second{
  
