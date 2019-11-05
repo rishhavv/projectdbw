@@ -20,6 +20,9 @@ html, body {
     color: white;
     font-weight: bolder;
   }
+  .middle{
+   flex: 1;
+  }
 
   .topnav a {
     float: left;
@@ -83,7 +86,7 @@ html, body {
     border-spacing: 0;
   }
 
-
+  /*-- start editing from here --*/
   a {
     text-decoration: none;
   }
@@ -92,70 +95,70 @@ html, body {
     text-align: right;
   }
 
-
+  /* text align right */
   .txt-lt {
     text-align: left;
   }
 
-
+  /* text align left */
   .txt-center {
     text-align: center;
   }
 
-
+  /* text align center */
   .float-rt {
     float: right;
   }
 
-
+  /* float right */
   .float-lt {
     float: left;
   }
 
-
+  /* float left */
   .clear {
     clear: both;
   }
 
-
+  /* clear float */
   .pos-relative {
     position: relative;
   }
 
-
+  /* Position Relative */
   .pos-absolute {
     position: absolute;
   }
 
-
+  /* Position Absolute */
   .vertical-base {
     vertical-align: baseline;
   }
 
-
+  /* vertical align baseline */
   .vertical-top {
     vertical-align: top;
   }
 
-
+  /* vertical align top */
   nav.vertical ul li {
     display: block;
   }
 
-
+  /* vertical menu */
   nav.horizontal ul li {
     display: inline-block;
   }
 
-
+  /* horizontal menu */
   img {
     max-width: 100%;
   }
 
-
+  /*-- end reset --*/
   body {
-  
-  
+    background: #76b852;
+    /* fallback for old browsers */
     background: #ebebeb;
     background-size: cover;
     background-attachment: fixed;
@@ -221,8 +224,9 @@ html, body {
     color: rgba(255, 255, 255, 0.7);
     font-size: .9em;
     -webkit-transform: translateY(-30px);
-
-    
+    -moz-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
     transform: translateY(-30px);
     visibility: visible !important;
   }
@@ -232,7 +236,16 @@ html, body {
     font-weight: 100;
   }
 
-  
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+  }
+
   :-ms-input-placeholder {
     color: #fff;
   }
@@ -253,6 +266,7 @@ html, body {
 
   input[type="submit"]:hover {
     -webkit-transition: .5s all;
+    -moz-transition: .5s all;
     -o-transition: .5s all;
     -ms-transition: .5s all;
     transition: .5s all;
@@ -270,6 +284,7 @@ html, body {
   .agileits-top p a {
     color: #fff;
     -webkit-transition: .5s all;
+    -moz-transition: .5s all;
     transition: .5s all;
     font-weight: 400;
   }
@@ -314,6 +329,7 @@ html, body {
     height: 1.2em;
     border: 1px solid #fff;
     -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
     -o-transition: .4s ease-in-out;
     transition: .4s ease-in-out;
 }
