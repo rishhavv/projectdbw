@@ -8,7 +8,7 @@ html, body {
   }
   .topnav {
     display: flex;
-    background-color: 	#EEECED;
+    background-color:	#EEECED;
     overflow: hidden;
     flex-direction: row;
     justify-content: baseline;
@@ -62,63 +62,78 @@ html, body {
     vertical-align: baseline;
   }
 
-  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
-  }
 
-  ol, ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-  }
 
-  blockquote, q {
-    quotes: none;
-  }
 
-  blockquote:before, blockquote:after, q:before, q:after {
-    content: '';
-    content: none;
-  }
+.card-container {
+    
+    -webkit-perspective: 500px;
+            perspective: 800px; 
+            color:white;
+            top: 30%;
+}
 
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
-  body {
-    background: #76b852;
-    background: #ebebeb;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Roboto', sans-serif;
-  }
-  h1 {
-    font-size: 3em;
+.card-container:hover .card{
+    -webkit-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+}
+
+.card {
+    -webkit-transition: -webkit-transform 0.7s;
+            transition: transform 0.7s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+
+.back {
+    -webkit-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+}
+
+.cards-container{
+   display: -webkit-flex;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-flex-direction: row;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: row;
+           flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  width: 350px;
+	height: 350px;
+  margin: 10px;
+  background-color:#76b852;
+  font-size: 30px;
+  text-align: center;
+}
+
+.front, .back {
+  box-shadow: 0 1px 6px 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+img {
+  display: block;
+}
+.hea{
+    color: black;
+    font-size: 100px;
     text-align: center;
-    color: #fff;
-    font-weight: 100;
-    text-transform: capitalize;
-    letter-spacing: 4px;
-    font-family: 'Roboto', sans-serif;
-  }
-
-
-  .main-w3layouts {
-    padding: 3em 0 1em;
-  }
-
-  .main-agileinfo {
-    width: 75%;
-    margin: 3em auto;
-    background: rgba(0, 0, 0, 0.18);
-    background-size: cover;
-  }
-
-  .agileits-top {
-    padding: 3em;
-  }
-
-
-.abcd{
-    font-size: 1.5rem;
+    background-color:76b852 ;
 }
