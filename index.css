@@ -4,7 +4,7 @@ html, body {
   font-family: sans-serif;
   font-weight: bold;
   background-color: #ebebeb;
-  height: 100%; 
+  height: 100%;
 }
 .topnav {
   display: flex;
@@ -21,7 +21,7 @@ html, body {
   font-weight: bolder;
 }
 .middle{
- flex: 1;      
+ flex: 1;
 }
 
 .topnav a {
@@ -42,10 +42,18 @@ html, body {
   background-color: black;
   color: white;
 }
-
+#abcd2{
+  width: 100%;
+  flex-grow: 1;
+  background-color:#ebebeb;
+  color:white;
+}
+#abcd2 a:hover{
+  background-color:#ebebeb;
+}
 
 .second{
- 
+
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -59,7 +67,7 @@ html, body {
   order: 1;
   list-style-type:none;
   transform: rotate(-90deg);
-  font-size: 7.5vh;  
+  font-size: 7.5vh;
   margin: 0%;
   top:15vh;
   left:-5vh;
@@ -68,15 +76,14 @@ html, body {
 }
 
 #small_popular::before{
-  
+
   top:4vh;
   content: '';
   width: 20vh;
   border-bottom: solid 0.7vh black;
   position: absolute;
   left: -14vh;
-  background-image: url(jks-ui\assets\images\shapes-small.png);
-}
+  }
 
 #move-able{
  position: relative;
@@ -84,14 +91,14 @@ html, body {
 }
 .item{
    height: auto;
-    
+
     min-width: 20rem;
     padding: 1px;
     align-content: space-between;
 }
 
 .card{
- 
+
   width: auto;
   align-content: center;
   position: relative;
@@ -107,7 +114,7 @@ html, body {
     overflow-x: hidden;
   }
   .second{
- 
+
     display:block;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -120,7 +127,7 @@ html, body {
 
     list-style-type:none;
     transform: none;
-    font-size: 5vh;  
+    font-size: 5vh;
     margin: 0%;
     top:auto;
     left:auto;
@@ -128,25 +135,25 @@ html, body {
     width: 40vh;
   }
   #small_popular::before{
-  
+
     top:2vh;
     content: '';
     width: 15vh;
     border-bottom: solid 0.7vh black;
     position: absolute;
     left: -14vh;
-      
+
   }
   .shapes-small{
     transform: rotate(-90deg);
-    bottom: 
+    bottom:
   }
   #big_popular{
     position: absolute;
     top: 8vh;
     list-style-type:none;
     transform: none;
-    font-size: 8vh; 
+    font-size: 8vh;
     margin: 0%;
     padding: 0%;
     left: auto;
@@ -168,7 +175,7 @@ html, body {
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
-  
+
 }
 .container{
   z-index: 100;
