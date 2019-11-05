@@ -87,6 +87,7 @@ html, body {
   }
   body {
     background: #76b852;
+    /* fallback for old browsers */
     background: #ebebeb;
     background-size: cover;
     background-attachment: fixed;
