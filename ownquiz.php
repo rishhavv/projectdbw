@@ -24,7 +24,6 @@ $sql="create table quiz(
 mysqli_query($con,"$sql");
 				$qname=$_POST['qname'];
 				$q1=$_POST['q1'];
-
         $a1=$_POST['a1'];
 				$q2=$_POST['q2'];
 				$a2=$_POST['a2'];
