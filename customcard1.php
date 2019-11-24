@@ -16,6 +16,7 @@ if(mysqli_num_rows($result) > 0)
 {
     $row = mysqli_fetch_array($result);
     $qn=$row["qname"];
+		$name=$row["Name"];
 		$q1=$row["q1"];
 		$a1=$row['a1'];
 		$q2=$row['q2'];
@@ -58,7 +59,7 @@ else{
 
             </div>
 
-<h1 class="hea"><?php echo $qn?></h1>
+<h1 class="hea"><?php echo $qn.' Contributed By:'.$name;?></h1>
 <br><br><br><br><br><br><br>
 <div class="cards-container">
 
