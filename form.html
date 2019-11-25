@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+       
+    <head>  
+
+            <meta charset="utf-8">
+            <title>
+                    Login page
+                </title>
+           
+        
+       
+        <script src="regformval.js"></script>
+    </head>
+
+    <body>
+        <h1>----Register Yourself----</h1>
+        <form name = "registration" onSubmit="()=>formvalidation()" action="insert.php" method="POST">
+
+            <ul>
+        
+                <li><label for="Fname" > First Name: </label></li>
+                <li><input type="text" name="Fname" size="20"/> </li>
+        
+                <li><label for="Lname"> Last Name: </label> </li>
+                <li><input type="text" name="Lname" size="20" /> </li>
+        
+                <li><label for="age"> Age: </label> </li>
+                <li><input type="text" name="age" size="5" /> </li>
+        
+                <li><label for="Uname"> UserName: </label></li>
+                <li><input type="text" name="Uname" size="20" /></li>
+        
+                <li><label for="pass"> Password: </label> </li>
+                <li><input type="password" name="pass" size="20" /></li>
+        
+                <li><label for="gender"> Gender: </label></li>
+                <li><input type="radio" name="gender" value="male"> </li><span>Male</span>
+                <li><input type="radio" name="gender" value="female"> </li><span>Female</span>
+                <li><input type="radio" name="gender" value="other"> </li><span>Other</span>
+        
+                <li><input type="submit" name="submit" value="Submit" /></li>
+                
+            </ul>
+            <br>
+        </form>
+</body>
+</html>

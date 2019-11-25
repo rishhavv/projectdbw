@@ -1,11 +1,51 @@
+<?php
+$link=mysqli_connect("localhost","root","");
+if(!$link)
+{
+	die("ERROR: Could not connect. ".mysqli_connect_error());
+}
+
+$sql="use dbwproj";
+mysqli_query($link,$sql);
+
+$sql = "SELECT * FROM quiz";
+
+if($result = mysqli_query($link, $sql))
+{
+if(mysqli_num_rows($result) > 0)
+{
+    $row = mysqli_fetch_array($result);
+    $qn=$row["qname"];
+		$name=$row["Name"];
+		$q1=$row["q1"];
+		$a1=$row['a1'];
+		$q2=$row['q2'];
+		$a2=$row['a2'];
+		$q3=$row['q3'];
+		$a3=$row['a3'];
+		$q4=$row['q4'];
+		$a4=$row['a4'];
+		$q5=$row['q5'];
+		$a5=$row['a5'];
+
+}
+
+else
+    echo "<p align='center'><font color='black' >Please enter valid Username and Password<font></p>";
+
+}
+else{
+  echo"failed to get values";
+}
+?>
 <html>
     <title>Your Quiz</title>
     <head>
-        
+
             <link rel="stylesheet" href="cards.css">
     </head>
-<body>    
-  <img src="bg.jpg" id="bg" alt="">
+<body>
+
         <div class="topnav">
                 <a href="homepage.html" class="flashbox">FlashBox</a>
                 <a href="categories.html">Category</a>
@@ -14,64 +54,62 @@
                 <a href="blog.html">Blog</a>
                 <a href="#blog" id="abcd2"></a>
                 <a href="signup.html">Sign Up</a>
-                <a href="#blog">Sign In</a>
+                <a href="signin.html">Sign In</a>
                  <ul class="middle"></ul>
 
             </div>
-          
-<h1 class="hea">Counting in French</h1>
+
+<h1 class="hea"><?php echo $qn.' Contributed By:'.$name;?></h1>
 <br><br><br><br><br><br><br>
 <div class="cards-container">
-    
-    <img src="" id="bg" alt="">
+
         <div class="card-container">
           <div class="card">
             <div class="front">
-            One
+            <?php echo $q1?>
             </div>
             <div class="back">
-                    Un
+                  <?php echo $a1?>
             </div>
           </div>
         </div>
-        
+
         <div class="card-container">
                 <div class="card">
                   <div class="front">
-                 Two
+                 <?php echo $q2?>
                   </div>
                   <div class="back">
-                        Deux
+                        <?php echo $a2?>
                   </div>
                 </div>
               </div><div class="card-container">
                     <div class="card">
                       <div class="front">
-                      Three
+                      <?php echo $q3?>
                       </div>
                       <div class="back">
-                            Trois
+                            <?php echo $a3?>
                       </div>
                     </div>
                   </div><div class="card-container">
                         <div class="card">
                           <div class="front">
-                          Four
+                          <?php echo $q4?>
                           </div>
                           <div class="back">
-                                Quatre
+                                <?php echo $a4?>
                           </div>
                         </div>
                       </div><div class="card-container">
                             <div class="card">
                               <div class="front">
-                              Five
+                              <?php echo $q5?>
                               </div>
                               <div class="back">
-                                    Cinq
+                                    <?php echo $a5?>
                               </div>
                             </div>
                           </div>
       </body>
       </html>
-

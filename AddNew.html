@@ -4,7 +4,7 @@
 
 </head>
 <body>
-
+	<img src="bg.jpg" id="bg" alt="">
         <div class="topnav">
                 <a href="homepage.html" class="flashbox">FlashBox</a>
                 <a href="categories.html">Category</a>
@@ -28,30 +28,34 @@
 
 
 	<div class="main-w3layouts wrapper">
-		<h1 style="color:black">Make your own quiz tailored for you.</h1>
+		<h1 style="color:white">Make your own quiz tailored for you.</h1>
 		<div class="main-agileinfo">
 			<div class="agileits-top">
 				<form action="ownquiz.php" method="POST">
-					<input class="text" type="text" name="qname" placeholder="Quiz Name" required=""><br><br><br>
-					<label name="mnm">Question 1:</label>
+          <label name="mnm" style="color: aliceblue;">Name your own quiz:</label>
+          <input class="text" type="text" name="qname" placeholder="Quiz Name" required=""><br><br><br>
+          <label name="mnm" style="color: aliceblue;">Contributed By:</label>
+          <input class="text" type="text" name="name" placeholder="Your Name" required=""><br><br><br>
+
+					<label name="mnm" style="color: aliceblue;">Question 1:</label>
 					<input class="text" type="text" name="q1" placeholder="Question" required="">
-					<label name="mnm">Answer:</label>
+					<label name="mnm" style="color: aliceblue;">Answer:</label>
 					<input class="text" type="text" name="a1" placeholder="Answer" required=""><br><br>
-					<label name="mnm">Question 2:</label>
+					<label name="mnm" style="color: aliceblue;">Question 2:</label>
           <input class="text" type="text" name="q2" placeholder="Question" required="">
-					<label name="mnm">Answer:</label>
+					<label name="mnm" style="color: aliceblue;">Answer:</label>
 					<input class="text" type="text" name="a2" placeholder="Answer" required=""><br><br>
-					<label name="mnm">Question 3:</label>
+					<label name="mnm" style="color: aliceblue;">Question 3:</label>
 					<input class="text" type="text" name="q3" placeholder="Question" required="">
-					<label name="mnm">Answer:</label>
+					<label name="mnm" style="color: aliceblue;">Answer:</label>
 					<input class="text" type="text" name="a3" placeholder="Answer" required=""><br><br>
-					<label name="mnm">Question 4:</label>
+					<label name="mnm" style="color: aliceblue;">Question 4:</label>
 					<input class="text" type="text" name="q4" placeholder="Question" required="">
-					<label name="mnm">Answer:</label>
+					<label name="mnm" style="color: aliceblue;">Answer:</label>
 					<input class="text" type="text" name="a4" placeholder="Answer" required=""><br><br>
-					<label name="mnm">Question 5:</label>
+					<label name="mnm" style="color: aliceblue;">Question 5:</label>
 					<input class="text" type="text" name="q5" placeholder="Question" required="">
-					<label name="mnm">Answer:</label>
+					<label name="mnm" style="color: aliceblue;">Answer:</label>
 					<input class="text" type="text" name="a5" placeholder="Answer" required=""><br><br>
                     <input type="submit" value="ADD">
 				</form>

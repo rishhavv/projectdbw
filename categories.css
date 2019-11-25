@@ -1,52 +1,69 @@
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-    font-family: sans-serif;
-    font-weight: bold;
-    background-color: #ebebeb;
-    height: 100%;
-  }
-  .topnav {
-    display: flex;
-    background-color: 	#EEECED;
-    overflow: hidden;
-    flex-direction: row;
-    justify-content: baseline;
-    flex-grow: 1;
-    width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: sans-serif;
+  font-weight: bold;
+  
+  height: 100%;
+}
+.topnav {
+  display: flex;
+  background-color: 	#EEECED;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: baseline;
+  flex-grow: 1;
+  z-index: 500;
+  position: sticky;
 
-  }
-  .flashbox{
-    background: #991a4d;
-    color: white;
-    font-weight: bolder;
-  }
-  .topnav a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 20px 30px;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-  .topnav a:hover {
-    background-color:coral;
-    color:white;
-  }
-  .topnav a.active {
-    background-color: black;
-    color: white;
-  }
-  #abcd2{
-    width: 100%;
-    flex-grow: 1;
-    background-color:#ebebeb;
-    color:white;
-  }
-  #abcd2 a:hover{
-    background-color:#ebebeb;
-  }
+}
+.flashbox{
+  background: #465a95;
+  color: white;
+  font-weight: bolder;
+}
+.middle{
+ flex: 1;
+}
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  z-index: -500;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.topnav a:hover {
+  background-color:black;
+  color:white;
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+#abcd2{
+  width: 100%;
+  flex-grow: 1;
+  background-color:#ebebeb;
+  color:white;
+}
+#abcd2 a:hover{
+  background-color:#ebebeb;
+}
   html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -91,7 +108,7 @@ html, body {
 
   }
   .links a {
-    color: black;
+    color: white;
     text-align: center;
     padding: 20px 30px;
     text-decoration: none;
@@ -99,7 +116,7 @@ html, body {
     font-family: Georgia, Times, 'Times New Roman', serif;
   }
   .links a:hover {
-  background-color:#76b852;
+  background-color:black;
   color:white;
 }
 
